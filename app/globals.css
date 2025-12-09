@@ -530,8 +530,8 @@ body {
 }
 
 .character-avatar {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   border-radius: 50%;
   margin: 0 auto 15px;
@@ -539,6 +539,14 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 2rem;
+  overflow: hidden;
+  border: 3px solid var(--primary);
+}
+
+.character-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .character-card h4 {

@@ -66,46 +66,60 @@ export default function Home() {
         <h2 className="section-title">可选主角</h2>
         <div className="character-grid">
           <div className="character-card">
-            <div className="character-avatar">🇵🇹</div>
-            <h4>拉斐尔</h4>
+            <div className="character-avatar">
+              <img src="/images/characters/rafael.png" alt="拉斐尔" />
+            </div>
+            <h4>拉斐尔·卡斯特路</h4>
             <div className="region">葡萄牙 · 里斯本</div>
-            <p>年轻的贵族之子，为了寻找失踪的父亲而踏上航海之路。</p>
+            <p>对昔日从里斯本展开旅程的众多航海者充满向往，决定出海冒险。公会委托报酬更多，军事投资只需八成。</p>
           </div>
           <div className="character-card">
-            <div className="character-avatar">🇪🇸</div>
-            <h4>卡塔丽娜</h4>
-            <div className="region">西班牙 · 塞维利亚</div>
-            <p>西班牙海军女将，为了证明自己的实力而出海冒险。</p>
-          </div>
-          <div className="character-card">
-            <div className="character-avatar">🇬🇧</div>
-            <h4>霍德拉姆</h4>
-            <div className="region">英国 · 伦敦</div>
-            <p>英国皇家海军军官，奉命开拓海外殖民地。</p>
-          </div>
-          <div className="character-card">
-            <div className="character-avatar">🇳🇱</div>
-            <h4>约翰</h4>
+            <div className="character-avatar">
+              <img src="/images/characters/lilu.png" alt="丽璐" />
+            </div>
+            <h4>丽璐·阿歌特</h4>
             <div className="region">荷兰 · 阿姆斯特丹</div>
-            <p>荷兰商人之子，立志成为世界最大的贸易商。</p>
+            <p>天生活泼开朗不服输，正面对抗世界富商。交易品的卖价比其他主角高5%。</p>
           </div>
           <div className="character-card">
-            <div className="character-avatar">🇮🇹</div>
-            <h4>保罗</h4>
-            <div className="region">意大利 · 热那亚</div>
-            <p>意大利冒险家，追寻马可波罗的足迹探索东方。</p>
+            <div className="character-avatar">
+              <img src="/images/characters/hedram.png" alt="赫德拉姆" />
+            </div>
+            <h4>赫德拉姆·柏格斯统</h4>
+            <div className="region">瑞典 · 斯德哥尔摩</div>
+            <p>为了让预算拮据的自国舰队登上世界第一而挺身而出。可拖航捕获船，瑞典会发给国家奖金。</p>
           </div>
           <div className="character-card">
-            <div className="character-avatar">🇹🇷</div>
-            <h4>伍丁</h4>
-            <div className="region">奥斯曼 · 伊斯坦布尔</div>
-            <p>奥斯曼帝国的海军将领，誓要称霸地中海。</p>
-          </div>
-          <div className="character-card">
-            <div className="character-avatar">🌏</div>
-            <h4>李华梅</h4>
+            <div className="character-avatar">
+              <img src="/images/characters/maria.png" alt="李华梅" />
+            </div>
+            <h4>玛丽亚·华梅·李</h4>
             <div className="region">东亚 · 杭州</div>
-            <p>明朝女海商，为了家族的荣耀而纵横四海。</p>
+            <p>为保护在倭寇欺凌下苦不堪言的百姓，无视明朝锁国政策，率领私人舰队征战的女提督。</p>
+          </div>
+          <div className="character-card">
+            <div className="character-avatar">
+              <img src="/images/characters/kyotaro.png" alt="杏太郎" />
+            </div>
+            <h4>杏太郎·佐伯</h4>
+            <div className="region">日本 · 九州</div>
+            <p>九州某豪族继承人，一族遭敌人袭击，父亲切腹。穷途末路之际，划着小渔船出海。可拖航捕获船。</p>
+          </div>
+          <div className="character-card">
+            <div className="character-avatar">
+              <img src="/images/characters/wooding.png" alt="伍丁" />
+            </div>
+            <h4>亚伯拉罕·伍丁</h4>
+            <div className="region">阿拉伯 · 巴士拉</div>
+            <p>阿拉伯大富豪的后嗣，表面上基于收集古董的嗜好，实则为探寻身世之谜而展开漫漫长旅。</p>
+          </div>
+          <div className="character-card">
+            <div className="character-avatar">
+              <img src="/images/characters/tiya.png" alt="蒂雅" />
+            </div>
+            <h4>蒂雅·瓦曼·恰斯卡</h4>
+            <div className="region">南美 · 新大陆</div>
+            <p>拥有昔日在印加帝国雄霸一方的王族血统的混血儿，最初担任埃斯康特军的翻译。</p>
           </div>
         </div>
       </section>
