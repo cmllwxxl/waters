@@ -33,7 +33,7 @@ export default function DownloadPage() {
           </div>
           <div className="download-info-item">
             <span className="label">文件大小</span>
-            <span className="value">约 500 MB</span>
+            <span className="value">约 1.7 GB</span>
           </div>
           <div className="download-info-item">
             <span className="label">游戏语言</span>
