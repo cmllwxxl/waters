@@ -2,7 +2,7 @@ import { MetadataRoute } from "next";
 import { articles } from "./guide/data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://waters.example.com"; // 替换为实际域名
+  const baseUrl = "https://www.uncharted-water.com";
 
   const staticPages = [
     {
