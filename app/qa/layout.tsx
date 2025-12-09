@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "大航海时代4威力加强版常见问题解答",
     description: "大航海时代4威力加强版HD常见问题解答，游戏安装运行问题解决方案。",
+    url: "https://www.uncharted-water.com/qa",
+  },
+  alternates: {
+    canonical: "https://www.uncharted-water.com/qa",
   },
 };
 

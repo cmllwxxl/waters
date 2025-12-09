@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "大航海时代4威力加强版攻略大全",
     description: "大航海时代4威力加强版HD完整攻略，包含李华梅攻略、霸者之证、宝物图鉴等。",
+    url: "https://www.uncharted-water.com/guide",
+  },
+  alternates: {
+    canonical: "https://www.uncharted-water.com/guide",
   },
 };
 

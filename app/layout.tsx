@@ -48,9 +48,11 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  metadataBase: new URL("https://www.uncharted-water.com"),
   openGraph: {
     type: "website",
     locale: "zh_CN",
+    url: "https://www.uncharted-water.com",
     siteName: "大航海时代4威力加强版HD下载站",
     title: "大航海时代4威力加强版HD下载 - 修改器/MOD/攻略大全",
     description: "大航海时代4威力加强版HD官方下载站，提供游戏下载、修改器、MOD、完整攻略等资源。",
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
     description: "大航海时代4威力加强版HD官方下载站，提供游戏下载、修改器、MOD、完整攻略等资源。",
   },
   alternates: {
-    canonical: "/",
+    canonical: "https://www.uncharted-water.com",
   },
   category: "游戏",
 };

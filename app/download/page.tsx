@@ -3,11 +3,15 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "大航海时代4威力加强版HD下载 - 免费中文版/修改器/MOD",
-  description: "大航海时代4威力加强版HD免费下载，包含完整中文版游戏、修改器、MOD资源。支持Windows 10/11，提供百度网盘高速下载，附详细安装教程。",
+  description: "大航海时代4威力加强版HD免费下载，包含完整中文版游戏、修改器、MOD资源。支持Windows 10/11，提供夸克网盘高速下载，附详细安装教程。",
   keywords: ["大航海时代4下载", "大航海时代4威力加强版下载", "大航海时代4hd下载", "大航海时代4修改器", "大航海时代4mod"],
   openGraph: {
     title: "大航海时代4威力加强版HD下载 - 免费中文版",
     description: "大航海时代4威力加强版HD免费下载，完整中文版游戏，支持Windows 10/11。",
+    url: "https://www.uncharted-water.com/download",
+  },
+  alternates: {
+    canonical: "https://www.uncharted-water.com/download",
   },
 };
 
@@ -41,21 +45,12 @@ export default function DownloadPage() {
           </div>
         </div>
 
-        <a href="#" className="btn btn-primary" style={{ width: "100%" }}>
-          百度网盘下载
+        <a href="https://pan.quark.cn/s/2f2399a92824" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: "100%" }}>
+          夸克网盘下载
         </a>
         <p style={{ color: "#8899aa", fontSize: "0.9rem", marginTop: "15px" }}>
-          提取码: xxxx
+          点击上方按钮直接下载，无需提取码
         </p>
-
-        <div style={{ marginTop: "20px", display: "flex", gap: "15px", justifyContent: "center" }}>
-          <a href="#" className="btn btn-secondary">
-            备用下载 1
-          </a>
-          <a href="#" className="btn btn-secondary">
-            备用下载 2
-          </a>
-        </div>
       </div>
 
       {/* System Requirements */}
