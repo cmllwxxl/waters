@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { articles, categories } from "./data";
 
 const guideData = [
   {
@@ -125,13 +127,22 @@ const guideData = [
 
 export default function GuidePage() {
   const [activeGuide, setActiveGuide] = useState("beginner");
+  const [activeCategory, setActiveCategory] = useState("全部");
 
   const currentGuide = guideData.find((g) => g.id === activeGuide);
+
+  const filteredArticles = activeCategory === "全部"
+    ? articles
+    : articles.filter((a) => a.category === activeCategory);
 
   return (
     <div className="section">
       <h1 className="section-title">游戏攻略</h1>
+      <p style={{ textAlign: "center", color: "#b8c5d6", marginBottom: "30px" }}>
+        大航海时代4威力加强版HD完整攻略，包含新手入门、角色攻略、贸易指南等
+      </p>
 
+      {/* 快速攻略 */}
       <div className="guide-nav">
         {guideData.map((guide) => (
           <button
@@ -156,7 +167,45 @@ export default function GuidePage() {
         </div>
       )}
 
-      <div style={{ marginTop: "40px" }}>
+      {/* 攻略文章列表 */}
+      <div style={{ marginTop: "60px" }}>
+        <h2 className="section-title">详细攻略文章</h2>
+
+        {/* 分类筛选 */}
+        <div className="guide-nav" style={{ marginBottom: "30px" }}>
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={`guide-nav-btn ${activeCategory === category ? "active" : ""}`}
+              onClick={() => setActiveCategory(category)}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+
+        {/* 文章列表 */}
+        <div className="article-list">
+          {filteredArticles.map((article) => (
+            <Link
+              key={article.slug}
+              href={`/guide/${article.slug}`}
+              className="article-card"
+            >
+              <div className="article-card-content">
+                <span className="article-category">{article.category}</span>
+                <h3 className="article-card-title">{article.title}</h3>
+                <p className="article-card-desc">{article.description}</p>
+                <time className="article-card-date">{article.date}</time>
+              </div>
+              <span className="article-card-arrow">→</span>
+            </Link>
+          ))}
+        </div>
+      </div>
+
+      {/* 七大海域介绍 */}
+      <div style={{ marginTop: "60px" }}>
         <h2 className="section-title">七大海域介绍</h2>
         <div className="card-grid">
           <div className="card">
