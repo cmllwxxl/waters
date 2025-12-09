@@ -75,6 +75,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN">
+      <head>
+        <script charSet="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `LA.init({id:"L21E3LAo75B3dtct",ck:"L21E3LAo75B3dtct",autoTrack:true,hashMode:true,screenRecord:true})`,
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
