@@ -14,8 +14,56 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "大航海时代4威力加强版 - 官方下载站",
-  description: "大航海时代4威力加强版游戏下载、攻略、常见问题解答",
+  title: {
+    default: "大航海时代4威力加强版HD下载 - 修改器/MOD/攻略大全",
+    template: "%s | 大航海时代4威力加强版"
+  },
+  description: "大航海时代4威力加强版HD官方下载站，提供游戏下载、修改器、MOD、完整攻略、霸者之证获取、李华梅攻略、蒂雅攻略、宝物图鉴等资源。支持Windows 10/11，免费下载畅玩经典航海游戏。",
+  keywords: [
+    "大航海时代4威力加强版",
+    "大航海时代4威力加强版hd",
+    "大航海时代4威力加强版修改器",
+    "大航海时代4威力加强版hd修改器",
+    "大航海时代4威力加强版hd宝物",
+    "大航海时代4威力加强版hd霸者之证",
+    "大航海时代4威力加强版李华梅详细攻略",
+    "大航海时代4威力加强版蒂雅攻略",
+    "大航海时代4威力加强版mod",
+    "大航海时代4威力加强版hd攻略",
+    "大航海时代4下载",
+    "大航海时代4攻略",
+    "KOEI航海游戏"
+  ],
+  authors: [{ name: "大航海时代4粉丝站" }],
+  creator: "大航海时代4粉丝站",
+  publisher: "大航海时代4粉丝站",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "zh_CN",
+    siteName: "大航海时代4威力加强版HD下载站",
+    title: "大航海时代4威力加强版HD下载 - 修改器/MOD/攻略大全",
+    description: "大航海时代4威力加强版HD官方下载站，提供游戏下载、修改器、MOD、完整攻略等资源。",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "大航海时代4威力加强版HD下载 - 修改器/MOD/攻略大全",
+    description: "大航海时代4威力加强版HD官方下载站，提供游戏下载、修改器、MOD、完整攻略等资源。",
+  },
+  alternates: {
+    canonical: "/",
+  },
+  category: "游戏",
 };
 
 export default function RootLayout({

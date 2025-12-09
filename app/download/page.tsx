@@ -1,4 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "大航海时代4威力加强版HD下载 - 免费中文版/修改器/MOD",
+  description: "大航海时代4威力加强版HD免费下载，包含完整中文版游戏、修改器、MOD资源。支持Windows 10/11，提供百度网盘高速下载，附详细安装教程。",
+  keywords: ["大航海时代4下载", "大航海时代4威力加强版下载", "大航海时代4hd下载", "大航海时代4修改器", "大航海时代4mod"],
+  openGraph: {
+    title: "大航海时代4威力加强版HD下载 - 免费中文版",
+    description: "大航海时代4威力加强版HD免费下载，完整中文版游戏，支持Windows 10/11。",
+  },
+};
 
 export default function DownloadPage() {
   return (
