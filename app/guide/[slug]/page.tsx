@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { articles } from "../data";
@@ -42,7 +43,7 @@ export default async function ArticlePage({ params }: Props) {
   // 简单的 Markdown 渲染
   const renderContent = (content: string) => {
     const lines = content.trim().split("\n");
-    const elements: JSX.Element[] = [];
+    const elements: React.ReactElement[] = [];
     let inTable = false;
     let tableRows: string[] = [];
     let inCodeBlock = false;
